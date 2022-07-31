@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    font-size: 20px;
+}
+
+.image{
+    min-height: 270px;
+    border: 6px solid black;
+   max-height: 90vh;
+}
+.box10{
+    background-color: rgb(74, 70, 70);
+}
+.initial{
+    width: 40%;
+}
+.input_box{
+    height: 60%;
+}
+.input_box input{
+    font-size: 30px;
+    padding: 0;
+}
+.selector{
+    height: 40%;
+    
+}
+.selector select{
+    font-size: 15px;
+    
+}
+.selector select option{
+    font-size: 15px;
+    background-color: black;
+}
+.formula{
+    font-size: 15px;
+}
+.form{
+    background-color: rgb(56, 54, 54);
+    color: aliceblue;
+}

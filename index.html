@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap site</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="fluid-container">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top" >
+            <div class="container-fluid ">
+              <a class="navbar-brand " href="#">LOGO</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#carouselExampleDark">Home</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">About-Us</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link " href="#converter">Converter</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact-us" >Contact-Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+
+          <!-- corousel ------------------------------------- -->
+
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./image/globe-7343678_1920.jpg" class="d-block image w-100" alt="globe image">
+                <div class="carousel-caption text-light d-none d-sm-block">
+                  <h5>Nelson Mandela</h5>
+                  <p>The greatest glory in living lies not in never falling, but in rising every time we fall.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./image/planet-581239.jpg" class="d-block image w-100" alt="mpuntains image">
+                <div class="carousel-caption text-light d-none d-sm-block">
+                  <h5>Walt Disney</h5>
+                  <p>The way to get started is to quit talking and begin doing.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./image/universe-4609408_1920.jpg" class="d-block image w-100" alt="sunset image">
+                <div class="carousel-caption text-light d-none d-sm-block">
+                  <h5>John Lennon</h5>
+                  <p>Life is what happens when you're busy making other plans.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./image/fisherman-6479663_1920.jpg" class="d-block image w-100" alt="wedding image">
+                <div class="carousel-caption text-light d-none d-sm-block">
+                  <h5>Eleanor Roosevelt</h5>
+                  <p>If life were predictable it would cease to be life, and be without flavor. </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+          <!-- Converter------------------------------------------------------------------------------------------------------ -->
+        <div class="coontainer-fluid bg-dark mb-0 pt-3 border-bottom  ">
+          <h1 class="text-light text-center">Temperature Converter</h1>
+        </div>
+         
+        <div class="container-fluid bg-dark d-flex justify-content-center py-5" id="converter">
+          <div class=" container-sm col-md-7 py-4 px-1 border border-light rounded-3">
+               <h1 class="text-light">Converter : </h1>
+
+               <div class="container-md  border border-dark rounded p-1">
+                <div class="box10 col-md-10  text-white px-2 "><p>Temperature</p></div>
+               </div>
+     
+               <div class=" container-fluid-md   d-flex flex-row ">
+
+                  <div class=" col-5 border border-dark">
+                    <div class="input_box">
+                      <input id="initial_val" type="number" class="form-control h-100 bg-dark text-light text-center" value="0" onkeyup="convert()">
+                    </div>
+                    <div class="selector ">
+                      <select id="input" class="w-100 h-100 border rounded-0 bg-dark text-light" onchange="fun() ,convert()">
+                        <option selected value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                      </select>
+                    </div>
+                  </div>
+     
+                   <div class="display-6 col-1 text-center text-light">=</div>
+     
+                  <div class=" col-5">
+                    <div class="input_box"><input id="result" type="number" class="form-control h-100 bg-dark text-light text-center" value="0"></div>
+                    <div class="selector  m-0" >
+                      <select id="output" class="form-select form-select-sm h-100 w-100 border rounded-0 bg-dark text-light" onchange="fun2(), convert()">
+                        <option selected value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                      </select>
+                    </div>
+                  </div>
+               </div>
+               <div class="mx-2 d-flex flex-row mt-4">
+                 <div class="col-1">
+                     <span class="badge badge-warning bg-warning">Formula</span>
+                 </div>
+                 <div id="formula" class="col-6 formula text-light">(0°C × 9/5) + 32 = 32°F
+                 </div>
+               </div>
+            </div>
+          </div>
+
+      <!-- form ------------------------------------------------------------------------ -->
+      <div class="container-fluid bg-dark border-top border-light pt-2 pb-5 " id="contact-us">
+        <h1 class="text-light text-center pb-3 text-decoration-underline">Contact_us.</h1>
+        <div class="form container-sm bg-$grey col-sm-6  pt-3 pb-3">
+        <form action="# ">
+          <div class="mb-3 mt-3 ">
+            <label for="name" class="form-label pe-3 h5">Name:</label>
+            <input type="text" class="form-control " id="name" placeholder="Enter Name" name="name">
+          </div>
+          <div class="mb-3 mt-3 ">
+            <label for="email" class="form-label pe-3 h5">Email:</label>
+            <input type="email" class="form-control " id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="mb-3 ">
+            <label for="phone" class="form-label pe-3 h5">Phone NO.:</label>
+            <input type="number" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+          </div>
+          <div class="mb-3 ">
+            <label for="pwd" class="form-label pe-3 h5">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+          </div>
+          
+          <div class="form-check mb-3  ">
+            <label class="form-check-label">
+              <input class="form-check-input " type="checkbox" name="remember"> Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      </div>
+
+         
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
